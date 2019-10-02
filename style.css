@@ -1,0 +1,322 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+html 
+{
+    scroll-behavior: smooth;
+}
+body 
+{
+    margin: 0;
+    padding: 0;
+    font-family: "Wire One", sans-serif;
+    font-weight: 100;
+    
+/* NAVIGATION */    
+}
+nav 
+{
+    width: 100%;
+    background: #262626;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    text-align: center;
+
+}
+nav, a{
+
+    transition: 0.4s;
+}
+nav, a:hover
+{
+    color: #ff8C00;
+}
+ul 
+{
+    list-style: none;
+    display: inline-block;
+}
+li 
+{
+    float: left; 
+}
+a 
+{
+    padding: 20px;
+    width: 100px;
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+/* HOME */    
+}
+#home 
+{
+    height: 700px;
+    background: black;
+    display: inline-block;
+    width: 100%;   
+    padding-top: 100px;
+}
+#home h2 
+{
+    color: white;
+    text-align: center;
+    margin: 200px auto 0 auto;
+
+}
+#home h3 
+{
+    color: white;
+    text-align: center;
+    font-weight: 100;
+}
+#home .img img
+{
+margin: -300px auto  auto;
+float: left;
+margin-left: 1000px;
+position: absolute;
+}
+.btn
+{
+    border: 1px solid white;
+    padding: 10px 30px;
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    text-transform: uppercase;
+    /*oppe, højre, nede, venstre*/
+    margin: 90px auto 0 auto;
+    text-align: center;
+}
+#home .btn-one
+{
+    background-color: darkorange;
+    font-family: "Roboto", sans-serif;
+}   
+/* ABOUT */    
+#about 
+{
+    height: 700px;
+    background: black;
+    display: inline-block;
+    width: 100%;
+}
+#about h1
+{
+    display: block;
+    background: #262626;
+    padding: 20px 0;
+    /*margin: 59px;*/
+    width: 100%;
+    color: darkorange;
+    font-weight: 100;
+}
+#about p
+{
+    color: white;
+}
+#about .container .box
+{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background: black;
+    margin: 10px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+/* PROJECTS */
+#projects 
+{
+    height: 700px;
+    background: black;
+    display: inline-block;
+    width: 100%;    
+}
+#projects h1
+{
+    display: block;
+    background: #262626;
+    padding: 20px 0;
+    /*margin: 59px;*/
+    width: 100%;
+    color: darkorange;
+    font-weight: 100;
+}
+#projects .container
+{
+    border: 1px solid white;
+    width: 1200px;
+    min-height: 50px;
+    background: #262626;
+    margin: 70px auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#projects .container .box
+{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background: white;
+    margin: 10px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+#projects .box .imgBox
+{
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+}
+#projects .box .imgBox img
+{
+    max-width: 100%;
+    transition: transform 2s;
+    height: 300px;
+    overflow: hidden;
+}
+#projects .container .box:hover .imgBox img
+{
+transform: scale(1.2);    
+}
+#projects .container .box .details
+{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    bottom: 10px;
+    right: 10px;
+    background: rgba(0,0,0,.8);
+    transform: scaleY(0);
+    transition: transform .5s;
+}
+#projects .container .box:hover .details
+{
+    transform: scaleY(0);
+}
+#projects .container .box .details .content
+{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    padding: 15px;
+    color: #fff;
+}
+#projects .container .box .details .content h2
+{
+    margin: 0
+    padding: 0;
+    font-size: 20px;
+    color: #fff;
+}
+#projects .container .box .details .content p
+{
+    margin: 10px 0 0;
+    padding: 0;
+    font-size: 20px;
+    color: #fff;
+}
+/* CONTACT */
+#contact 
+{
+    height: 700px;
+    background: black;
+    display: inline-block;
+    width: 100%;
+}
+#contact h1
+{
+    display: block;
+    background: #262626;
+    /*margin: 59px;*/
+    padding: 20px 0;
+    width: 100%;
+    color: #ff8C00;
+    font-weight: 100; 
+}
+#contact .contact-form {
+    max-width: 600px;
+    margin: auto;
+    padding: 0 10px;
+    overflow: hidden;
+}
+#contact .contact-form-text {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 16px 0;
+    border: o;
+    background: #111;
+    padding: 20px 40px;
+    outline: none;
+    color: #ddd;
+    transition: 0.5s;
+}
+#contact .contact-form-text:focus {
+    box-shadow: 0 0 10px 4px #34495e;
+}
+#contact .textarea.contact-form-text {
+    resize: none;
+    height: 120px;    
+}
+#contact .contact-form-btn {
+    float: left;
+    border: 1px solid white;
+    padding: 10px 30px;
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    text-transform: uppercase;
+    /*oppe, højre, nede, venstre*/
+    text-align: center;
+    background: #FF8C00
+}
+#contact .contact-form-btn:hover {
+    background-color: darkorange;
+    color: #FF8C00;
+}
+h1 {
+    /*margin: 100px;*/
+    text-align: center;
+    padding: 0;
+    color: white;
+}
+
+
+.footer {
+    background: #262626;
+    color: #262626;
+    height: 200px;
+}
+.button, .button1, .button2{
+
+    padding: 0;
+    margin: 0;
+}
+
+.socialmedia{
+	
+	  margin: auto;
+      width: 30%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
